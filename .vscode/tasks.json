@@ -9,19 +9,25 @@
             "command": "E:\\TDM-gcc\\bin\\g++.exe",
             "args": [
                 "-g",
-                "${file}",
-                "-L",
-                "E:\\TDM-gcc\\x86_64-w64-mingw32\\lib",
+                "${fileDirname}/*.cpp",
+                "-I",
+                "${workspaceFolder}",
+                "-lwinmm",
                 "-lEasyX",
                 "-lgdi32",
                 "-lole32",
-                "-I",
-                "${workspaceFolder}/**",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}.exe"
             ],
-            "group": "build",
-
+            "group": "build"
         }
     ]
 }
+
+
+
+/*
+
+
+
+*/
